@@ -15,7 +15,15 @@ public class CalculadoraTests
     public void DeveSomar5Com10ERetornar15()
     {
         //Arange
+
+        int num1 = 5;
+        int num2 = 10;
+
         //Act
+
+        int resultado = _calc.Somar(num1, num2);
+
         //Assert
+        Assert.Equal(15, resultado);
     }
 }
